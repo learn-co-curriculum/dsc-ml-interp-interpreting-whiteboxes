@@ -559,10 +559,10 @@ While the results are similar the results of our regression model, there are som
 * Interestingly, the most important feature negatively associated with our target is NOT being a single family home. 
 
 ## Explaining Our Interpretation
-Let's gather the inferences that were have collected to illustrate the big picture:
+Let's gather the inferences that were collected to illustrate the big picture:
 
 * We can be fairly confident in the result, because the accuracy is pretty high, because both models had a high accuracy score. __It will be important to validate these results on a hold-out dataset__.
-* Both models had higher precision than recall, which suggests that the model may be slightly more sensitive than specific. In other words, we are more likely to see a false positive than a false negative. __The class imbalance in the data might contribute to this__.
+* Both models had higher precision than recall, which suggests that the model may be slightly more specific than sensitive. In other words, we are more likely to see a false negative than a false positive. The class imbalance in the data might contribute to this.
 * In both models, sales price was the dominant feature to positively identify McMansions. However, we also saw that features that would be correlated with size were also important. __We should identify if it is the size these features are adding or the features themselves that is most important__. 
 * Neighborhood and sales price were identified by both of the models as important factors to determine if a home was or was not a McMansion. __This could have something to do with neighborhood development trends.__
 
